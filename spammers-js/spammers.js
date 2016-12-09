@@ -5,7 +5,6 @@ let linkQueue = [];
 linkQueue.push(baseUrl);
 const mailPattern = '[a-zA-Z0-9]+(?:[._+%-]+[a-zA-Z0-9]+)*@(?:[a-zA-Z0-9]?)+[.][a-zA-Z]{2,}';
 let urlPattern = 'href="(?:<siteURL>)?(?:\\.\\.)*(?:\\/?[a-zA-Z0-9%-])+\\??(?:[a-zA-Z0-9]+\\=[a-zA-Z0-9_%-]+[;&]?)*(?:\\.html|\\.htm|\\/)?"';
-// let urlPattern = 'href="(?:<siteURL>)?(?:\.\.)*(?:\([-A-Z0-9+&@#\/%=~_|$?!:,.]*\)|[-A-Z0-9+&@#\/%=~_|$?!:,.])*(?:\([-A-Z0-9+&@#\/%=~_|$?!:,.]*\)|[A-Z0-9+&@#\/%=~_|$])"';
 let tempUrl = baseUrl.replace("/", "\\/");
 tempUrl = tempUrl.replace(".", "\\.");
 tempUrl = tempUrl.replace("-", "\\-");
@@ -82,5 +81,3 @@ function find(){
   }
 }
 find();
-// }
-// });
